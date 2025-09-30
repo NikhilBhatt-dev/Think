@@ -6,7 +6,6 @@
 // });
 
 // export default openai
-git 
 
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
