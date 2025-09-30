@@ -2,6 +2,11 @@
   "version": 2,
   "builds": [
     {
+      "src": "client/index.html",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "client/dist" }
+    },
+    {
       "src": "server/server.js",
       "use": "@vercel/node"
     }
@@ -10,6 +15,10 @@
     {
       "src": "/(.*)",
       "dest": "server/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "client/index.html"
     }
   ]
 }
